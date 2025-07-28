@@ -24,7 +24,7 @@ describe('NotesController', () => {
       findAll: jest.fn(),
       findOne: jest.fn(),
       update: jest.fn(),
-      remove: jest.fn(),
+      remove: jest.fn(),    
     };
 
     // Set up the testing module

@@ -7,7 +7,7 @@ async function bootstrap() {
   
   // Enable CORS for frontend
   app.enableCors({
-    origin: 'http://localhost:5173',
+    origin: 'http://localhost:3001',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
@@ -15,7 +15,7 @@ async function bootstrap() {
   // Enable validation pipes
   app.useGlobalPipes(new ValidationPipe());
   
-  await app.listen(3001);
-  console.log('NestJS server running on http://localhost:3001');
+  await app.listen(3000);
+  console.log('NestJS server running on http://localhost:3000');
 }
 bootstrap();
